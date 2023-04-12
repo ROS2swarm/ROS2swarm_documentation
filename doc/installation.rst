@@ -10,17 +10,17 @@ This guide is a detailed step by step instruction to install the ROS2swarm packa
 Prerequisistes
 --------------
 
-.. tabs:: ROSversion
+.. tabs:: 
 
-    .. tab:: Dashing
+    .. group-tab:: Dashing
 
         Ubuntu 18.04
 
-    .. tab:: Foxy
+    .. group-tab:: Foxy
 
         Ubuntu 20.04
         
-    .. tab:: Galactic 
+    .. group-tab:: Galactic 
 
         Ubuntu 20.04 
 
@@ -33,17 +33,17 @@ ROS2swarm currently supports ROS 2 Dashing, Foxy, and Galactic.
 Please install your desired ROS 2 version (recommended: Galactic) following the official ROS 2 installation guide: 
 
 
-.. tabs:: ROSversion
+.. tabs:: 
 
-    .. tab:: Dashing
+    .. group-tab:: Dashing
 
         `Installing ROS 2 Dashing Diademata <https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html>`_ 
 
-    .. tab:: Foxy
+    .. group-tab:: Foxy
 
         `Installing ROS 2 Foxy Fitzroy <https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html>`_ 
         
-    .. tab:: Galactic 
+    .. group-tab:: Galactic 
 
         `Installing ROS 2 Galactic Geochelone <https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html>`_ 
 
@@ -52,7 +52,7 @@ Please install your desired ROS 2 version (recommended: Galactic) following the 
 Installation of Additional Dependencies
 ---------------------------------------
 
-.. tabs:: ROSversion
+.. tabs:: 
 
     .. code-tab:: Dashing
 
@@ -76,7 +76,7 @@ Installation of Additional Dependencies
 Installation of Gazebo
 ----------------------
 
-.. tabs:: ROSversion
+.. tabs:: 
 
     .. code-tab:: Dashing
 
