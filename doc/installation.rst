@@ -12,15 +12,15 @@ Prerequisistes
 
 .. tabs:: ROSversion
 
-    .. code-tab:: Dashing
+    .. tab:: Dashing
 
         Ubuntu 18.04
 
-    .. code-tab:: Foxy
+    .. tab:: Foxy
 
         Ubuntu 20.04
         
-    .. code-tab:: Galactic 
+    .. tab:: Galactic 
 
         Ubuntu 20.04 
 
@@ -35,15 +35,15 @@ Please install your desired ROS 2 version (recommended: Galactic) following the 
 
 .. tabs:: ROSversion
 
-    .. code-tab:: Dashing
+    .. tab:: Dashing
 
         `Installing ROS 2 Dashing Diademata <https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html>`_ 
 
-    .. code-tab:: Foxy
+    .. tab:: Foxy
 
         `Installing ROS 2 Foxy Fitzroy <https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html>`_ 
         
-    .. code-tab:: Galactic 
+    .. tab:: Galactic 
 
         `Installing ROS 2 Galactic Geochelone <https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html>`_ 
 
