@@ -46,9 +46,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'WordCount'
-copyright = '2018, Harsha'
-author = 'Harsha'
+project = 'ROS2swarm'
+copyright = '2023, Tanja Katharina Kaiser'
+author = 'Tanja Katharina Kaiser'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -112,7 +112,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'WordCountdoc'
+htmlhelp_basename = 'ROS2swarm'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -139,8 +139,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'WordCount.tex', 'WordCount Documentation',
-     'Harsha', 'manual'),
+    (master_doc, 'ROS2swarm.tex', 'ROS2swarm Documentation',
+     'Kaiser', 'manual'),
 ]
 
 
@@ -149,7 +149,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'wordcount', 'WordCount Documentation',
+    (master_doc, 'ROS2swarm', 'ROS2swarm Documentation',
      [author], 1)
 ]
 
@@ -160,9 +160,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'WordCount', 'WordCount Documentation',
-     author, 'WordCount', 'One line description of project.',
-     'Miscellaneous'),
+    (master_doc, 'ROS2swarm', 'ROS2swarm Documentation',
+     author, 'ROS2swarm', 'A ROS 2 Package for Swarm Robotics.',
+     ''),
 ]
 
 
