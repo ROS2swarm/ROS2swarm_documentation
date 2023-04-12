@@ -11,7 +11,8 @@ ROS2swarm Documentation
    :maxdepth: 2
    :hidden: 
    
-   installation.rst 
+   installation.rst
+   architecture.rst  
    patterns.rst
    contact.rst
 
@@ -45,6 +46,10 @@ Getting started
 
   - Instructions to set up ROS2swarm 
   
+* :doc:`Swarm Behaviors <patterns>`
+
+  - Overview of implemented swarm behaviors 
+  
 * :doc:`Contact <contact>`
 
-  - Contact opportunities for questions or if you want to contribute
+  - Contact details for questions or contributions

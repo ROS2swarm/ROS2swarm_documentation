@@ -11,25 +11,25 @@ We summarize the existing patterns as well as their requirements in the followin
 +-------------------------------+----------+----------+------------+-------+---------------------+
 | Pattern                       | Domain   | Type     | Simulation | Robot | Sensor Requirements |
 +===============================+==========+==========+============+=======+=====================+
-| aggregation                   | Movement | Basic    | y          | y     | LiDAR or IR         |
+| aggregation                   | Movement | Basic    | x          | x     | LiDAR or IR         |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| attraction                    | Movement | Basic    | y          | y     | LiDAR or IR         |
+| attraction                    | Movement | Basic    | x          | x     | LiDAR or IR         |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| attraction 2                  | Movement | Basic    | y          | y     | LiDAR or IR         |
+| attraction 2                  | Movement | Basic    | x          | x     | LiDAR or IR         |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| dispersion                    | Movement | Basic    | y          | y     | LiDAR or IR         |
+| dispersion                    | Movement | Basic    | x          | x     | LiDAR or IR         |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| drive                         | Movement | Basic    | y          | y     |                     |
+| drive                         | Movement | Basic    | x          | x     |                     |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| magnetometer                  | Movement | Basic    | n          | y     |                     |
+| magnetometer                  | Movement | Basic    | -          | x     |                     |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| minimalist flocking           | Movement | Basic    | y          | y     | LiDAR or IR         |
+| minimalist flocking           | Movement | Basic    | x          | x     | LiDAR or IR         |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| random walk                   | Movement | Basic    | y          | y     |                     |
+| random walk                   | Movement | Basic    | x          | x     |                     |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| discussed dispersion pattern  | Movement | Combined | y          | y     | LiDAR or IR         |
+| discussed dispersion pattern  | Movement | Combined | x          | x     | LiDAR or IR         |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| voter model                   | Voting   | Basic    | y          | y     |                     |
+| voter model                   | Voting   | Basic    | x          | x     |                     |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| majority rule                 | Voting   | Basic    | y          | y     |                     |
+| majority rule                 | Voting   | Basic    | x          | x     |                     |
 +-------------------------------+----------+----------+------------+-------+---------------------+
