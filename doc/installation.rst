@@ -55,22 +55,22 @@ Installation of Additional Dependencies
 .. tabs:: 
 
     .. group-tab:: Dashing
-
-	sudo apt install -y python3-pip
-	pip3 install -U argcomplete
-	sudo apt install python3-colcon-common-extensions python3-vcstool 
+	.. code-block:: console
+		sudo apt install -y python3-pip
+		pip3 install -U argcomplete
+		sudo apt install python3-colcon-common-extensions python3-vcstool 
 
     .. group-tab:: Foxy
-
-	sudo apt install -y python3-pip
-	pip3 install -U argcomplete
-	sudo apt install python3-colcon-common-extensions
+	.. code-block:: console
+		sudo apt install -y python3-pip
+		pip3 install -U argcomplete
+		sudo apt install python3-colcon-common-extensions
         
     .. group-tab:: Galactic 
-
-	sudo apt install -y python3-pip
-	pip3 install -U argcomplete
-	sudo apt install python3-colcon-common-extensions
+	.. code-block:: console
+		sudo apt install -y python3-pip
+		pip3 install -U argcomplete
+		sudo apt install python3-colcon-common-extensions
 
 
 Installation of Gazebo
@@ -79,31 +79,25 @@ Installation of Gazebo
 .. tabs:: 
 
     .. group-tab:: Dashing
-
-	curl -sSL http://get.gazebosim.org | sh
-	sudo apt remove gazebo11 libgazebo11-dev
-	sudo apt install gazebo9 libgazebo9-dev
-	sudo apt install ros-dashing-gazebo-ros-pkgs
-	sudo apt install ros-dashing-cartographer
-	sudo apt install ros-dashing-cartographer-ros
-	sudo apt install ros-dashing-navigation2
-	sudo apt install ros-dashing-nav2-bringup
+	.. code-block:: console
+		curl -sSL http://get.gazebosim.org | sh
+		sudo apt remove gazebo11 libgazebo11-dev
+		sudo apt install gazebo9 libgazebo9-dev
+		sudo apt install ros-dashing-gazebo-ros-pkgs
+		sudo apt install ros-dashing-cartographer ros-dashing-cartographer-ros
+		sudo apt install ros-dashing-navigation2 ros-dashing-nav2-bringup
 
     .. group-tab:: Foxy
-    
-	sudo apt install ros-foxy-gazebo-ros-pkgs
-	sudo apt install ros-foxy-cartographer
-	sudo apt install ros-foxy-cartographer-ros
-	sudo apt install ros-foxy-navigation2
-	sudo apt install ros-foxy-nav2-bringup
+    	.. code-block:: console
+		sudo apt install ros-foxy-gazebo-ros-pkgs
+		sudo apt install ros-foxy-cartographer ros-foxy-cartographer-ros
+		sudo apt install ros-foxy-navigation2 ros-foxy-nav2-bringup
 	
     .. group-tab:: Galactic
-    
-    	sudo apt install ros-galactic-gazebo-ros-pkgs
-    	sudo apt install ros-galactic-cartographer
-	sudo apt install ros-galactic-cartographer-ros
-	sudo apt install ros-galactic-navigation2
-	sudo apt install ros-galactic-nav2-bringup
+    	.. code-block:: console
+    		sudo apt install ros-galactic-gazebo-ros-pkgs
+    		sudo apt install ros-galactic-cartographer ros-galactic-cartographer-ros
+		sudo apt install ros-galactic-navigation2 ros-galactic-nav2-bringup
 
 
 Installation of Robot Packages
