@@ -12,8 +12,8 @@ ROS2swarm Documentation
    :maxdepth: 1
    :hidden: 
    
-   Installation 
-   
+   installation.rst 
+   contact.rst
 
 ROS2swarm is a ROS 2 package providing a framework for and library of swarm behaviors.
 Its aim is to facilitate swarm robotic projects in research, education, and industry. 
@@ -36,3 +36,13 @@ T. K. Kaiser, M. J. Begemann, T. Plattenteich, L. Schilling, G. Schildbach and H
   		doi={10.1109/ICRA46639.2022.9812417}
   	}
 
+Getting started
+---------------
+
+* :doc:`Installation <Installation>`
+
+  - Instructions to set up ROS2swarm 
+  
+* :doc:`Contact <Contact>`
+
+  - Contact opportunities for questions or if you want to contribute
