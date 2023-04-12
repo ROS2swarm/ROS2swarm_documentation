@@ -55,19 +55,25 @@ Installation of Additional Dependencies
 .. tabs:: 
 
     .. group-tab:: Dashing
+    
 	.. code-block:: console
+	
 		sudo apt install -y python3-pip
 		pip3 install -U argcomplete
 		sudo apt install python3-colcon-common-extensions python3-vcstool 
 
     .. group-tab:: Foxy
+    
 	.. code-block:: console
+	
 		sudo apt install -y python3-pip
 		pip3 install -U argcomplete
 		sudo apt install python3-colcon-common-extensions
         
     .. group-tab:: Galactic 
+    
 	.. code-block:: console
+	
 		sudo apt install -y python3-pip
 		pip3 install -U argcomplete
 		sudo apt install python3-colcon-common-extensions
@@ -79,7 +85,9 @@ Installation of Gazebo
 .. tabs:: 
 
     .. group-tab:: Dashing
+    
 	.. code-block:: console
+	
 		curl -sSL http://get.gazebosim.org | sh
 		sudo apt remove gazebo11 libgazebo11-dev
 		sudo apt install gazebo9 libgazebo9-dev
@@ -88,13 +96,17 @@ Installation of Gazebo
 		sudo apt install ros-dashing-navigation2 ros-dashing-nav2-bringup
 
     .. group-tab:: Foxy
+    
     	.. code-block:: console
+    	
 		sudo apt install ros-foxy-gazebo-ros-pkgs
 		sudo apt install ros-foxy-cartographer ros-foxy-cartographer-ros
 		sudo apt install ros-foxy-navigation2 ros-foxy-nav2-bringup
 	
     .. group-tab:: Galactic
+    
     	.. code-block:: console
+    	
     		sudo apt install ros-galactic-gazebo-ros-pkgs
     		sudo apt install ros-galactic-cartographer ros-galactic-cartographer-ros
 		sudo apt install ros-galactic-navigation2 ros-galactic-nav2-bringup
