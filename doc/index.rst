@@ -12,6 +12,7 @@ ROS2swarm Documentation
    :hidden: 
    
    installation.rst 
+   patterns.rst
    contact.rst
 
 ROS2swarm is a ROS 2 package providing a framework for and library of swarm behaviors.
