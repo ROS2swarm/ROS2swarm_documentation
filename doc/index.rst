@@ -8,8 +8,7 @@ ROS2swarm Documentation
 =======================
 
 .. toctree::
-   :titlesonly: 
-   :maxdepth: 1
+   :maxdepth: 2
    :hidden: 
    
    installation.rst 
@@ -39,10 +38,10 @@ T. K. Kaiser, M. J. Begemann, T. Plattenteich, L. Schilling, G. Schildbach and H
 Getting started
 ---------------
 
-* :doc:`Installation <Installation>`
+* :doc:`Installation <installation.rst>`
 
   - Instructions to set up ROS2swarm 
   
-* :doc:`Contact <Contact>`
+* :doc:`Contact <contact.rst>`
 
   - Contact opportunities for questions or if you want to contribute
