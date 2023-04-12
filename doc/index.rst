@@ -38,10 +38,10 @@ T. K. Kaiser, M. J. Begemann, T. Plattenteich, L. Schilling, G. Schildbach and H
 Getting started
 ---------------
 
-* :doc:`Installation <installation.rst>`
+* :doc:`Installation <installation>`
 
   - Instructions to set up ROS2swarm 
   
-* :doc:`Contact <contact.rst>`
+* :doc:`Contact <contact>`
 
   - Contact opportunities for questions or if you want to contribute
