@@ -17,6 +17,8 @@ ROS2swarm Documentation
 ROS2swarm is a ROS 2 package providing a framework for and library of swarm behaviors.
 Its aim is to facilitate swarm robotic projects in research, education, and industry. 
 
+The ROS2swarm package can be found on `Github <https://github.com/ROS2swarm/ROS2swarm>`_.
+
 This site contains the documentation for ROS2swarm. 
 If you use ROS2swarm in your work, please cite the 2022 ICRA paper `ROS2SWARM - A ROS 2 Package for Swarm Robot Behaviors <http://heikohamann.de/pub/kaiserICRA2022.pdf>`_.
 
