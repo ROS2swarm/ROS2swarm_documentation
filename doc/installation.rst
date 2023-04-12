@@ -1,7 +1,7 @@
 Installation
 ============
 
-This guide is a detailed step by step instruction to install the ROS2swarm package on top of *Ubuntu 20.04* for the use with 
+This guide is a detailed step by step instruction to install the ROS2swarm package on top of *Ubuntu* for the use with 
 
 - the TurtleBot 3
 - the Jackal UGV or
