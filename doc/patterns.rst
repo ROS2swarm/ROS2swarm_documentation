@@ -20,7 +20,7 @@ We summarize the existing patterns as well as their requirements in the followin
 | dispersion                    | Movement | Basic    | y          | y     | LiDAR or IR         |
 +-------------------------------+----------+----------+------------+-------+---------------------+
 | drive                         | Movement | Basic    | y          | y     |                     |
-+-------------------------------+----------+----------+-- ---------+-------+---------------------+
++-------------------------------+----------+----------+------------+-------+---------------------+
 | magnetometer                  | Movement | Basic    | n          | y     |                     |
 +-------------------------------+----------+----------+------------+-------+---------------------+
 | minimalist flocking           | Movement | Basic    | y          | y     | LiDAR or IR         |
