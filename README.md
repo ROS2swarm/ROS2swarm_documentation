@@ -1,4 +1,3 @@
-# Documentation example
+# Documentation for ROS2swarm
 
-We use this example in one [CodeRefinery](https://coderefinery.org/) lesson:
-- https://coderefinery.github.io/documentation/
+Documentation for the ROS 2 package [ROS2swarm](https://github.com/ROS2swarm/ROS2swarm)
