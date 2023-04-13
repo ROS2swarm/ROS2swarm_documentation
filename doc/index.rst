@@ -50,6 +50,10 @@ Getting started
 * :doc:`Swarm Behaviors <patterns>`
 
   - Overview of implemented swarm behaviors 
+
+* :doc:`How-to Guides <howto>`
+
+  - Guides for using ROS2swarm  
   
 * :doc:`Contact <contact>`
 
