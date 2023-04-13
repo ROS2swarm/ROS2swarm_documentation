@@ -2,9 +2,7 @@ How-to Guides
 =============
 
 .. toctree::
-   :glob: 
-   :maxdepth: 2
-   :hidden: 
+   :maxdepth: 1 
 
-    launch_sim.rst
-    launch_robot.rst
+    How-To-Guides/launch_sim.rst
+    How-To-Guides/launch_robot.rst
