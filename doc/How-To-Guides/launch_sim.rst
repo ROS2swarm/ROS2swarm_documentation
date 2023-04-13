@@ -28,7 +28,7 @@ For this purpose, the launch script ``start_simulation.sh`` offers several param
 | robot         | see `Supported Robot Platforms <robots>` | launched robot type                       | 
 +---------------+------------------------------------------+-------------------------------------------+
 | x_start       | float                                    | first position on x-axis                  | 
-+-------------------------------+----------+-----------------------------------------------------------+
++---------------+------------------------------------------+-------------------------------------------+
 | x_dist        | float                                    | increment along x-axis for robot position | 
 +---------------+------------------------------------------+-------------------------------------------+
 | y_start       | float                                    | first position on y-axis                  | 
