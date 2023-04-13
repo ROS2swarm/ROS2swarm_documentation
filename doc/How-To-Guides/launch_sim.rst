@@ -14,27 +14,27 @@ To facilitate starting the simulation and the desired swarm behavior, we provide
 The launch script launches the simulation environment in Gazebo, the desired number of robots, as well as the selected swarm behavior. 
 For this purpose, the launch script ``start_simulation.sh`` offers several parameterization options: 
 
-+---------------+-----------------------------------------------+-------------------------------------------+
-| Parameter     | Options                                       | Description                               |
-+===============+===============================================+===========================================+
-| gazebo_world  | see `Gazebo Worlds`_                          | simulation environment                    |
-+---------------+-----------------------------------------------+-------------------------------------------+
-| pattern       | see :doc:`Swarm  Behaviors <patterns>`        | executed swarm behavior                   |
-+---------------+-----------------------------------------------+-------------------------------------------+
-| number_robots | int                                           | number of launched robots                 |
-+---------------+-----------------------------------------------+-------------------------------------------+
-| log_level     | debug, info                                   | ROS log level for development             |
-+---------------+-----------------------------------------------+-------------------------------------------+
-| robot         | see :doc:`Supported Robot Platforms <robots>` | launched robot type                       | 
-+---------------+-----------------------------------------------+-------------------------------------------+
-| x_start       | float                                         | first position on x-axis                  | 
-+---------------+-----------------------------------------------+-------------------------------------------+
-| x_dist        | float                                         | increment along x-axis for robot position | 
-+---------------+-----------------------------------------------+-------------------------------------------+
-| y_start       | float                                         | first position on y-axis                  | 
-+---------------+-----------------------------------------------+-------------------------------------------+
-| y_dist        | float                                         | increment along y-axis for robot position | 
-+---------------+-----------------------------------------------+-------------------------------------------+
++---------------+--------------------------------------------------+-------------------------------------------+
+| Parameter     | Options                                          | Description                               |
++===============+==================================================+===========================================+
+| gazebo_world  | see `Gazebo Worlds`_                             | simulation environment                    |
++---------------+--------------------------------------------------+-------------------------------------------+
+| pattern       | see :doc:`Swarm  Behaviors <../patterns>`        | executed swarm behavior                   |
++---------------+--------------------------------------------------+-------------------------------------------+
+| number_robots | int                                              | number of launched robots                 |
++---------------+--------------------------------------------------+-------------------------------------------+
+| log_level     | debug, info                                      | ROS log level for development             |
++---------------+--------------------------------------------------+-------------------------------------------+
+| robot         | see :doc:`Supported Robot Platforms <../robots>` | launched robot type                       | 
++---------------+--------------------------------------------------+-------------------------------------------+
+| x_start       | float                                            | first position on x-axis                  | 
++---------------+--------------------------------------------------+-------------------------------------------+
+| x_dist        | float                                            | increment along x-axis for robot position | 
++---------------+--------------------------------------------------+-------------------------------------------+
+| y_start       | float                                            | first position on y-axis                  | 
++---------------+--------------------------------------------------+-------------------------------------------+
+| y_dist        | float                                            | increment along y-axis for robot position | 
++---------------+--------------------------------------------------+-------------------------------------------+
 
 After setting the parameters, you can start your swarm simulation by executing 
 
