@@ -86,22 +86,22 @@ Installation of Gazebo
 
     .. group-tab:: Dashing
     
-	.. code-block:: console
+		.. code-block:: console
 	
-		curl -sSL http://get.gazebosim.org | sh
-		sudo apt remove gazebo11 libgazebo11-dev
-		sudo apt install gazebo9 libgazebo9-dev
-		sudo apt install ros-dashing-gazebo-ros-pkgs
-		sudo apt install ros-dashing-cartographer ros-dashing-cartographer-ros
-		sudo apt install ros-dashing-navigation2 ros-dashing-nav2-bringup
+			curl -sSL http://get.gazebosim.org | sh
+			sudo apt remove gazebo11 libgazebo11-dev
+			sudo apt install gazebo9 libgazebo9-dev
+			sudo apt install ros-dashing-gazebo-ros-pkgs
+			sudo apt install ros-dashing-cartographer ros-dashing-cartographer-ros
+			sudo apt install ros-dashing-navigation2 ros-dashing-nav2-bringup
 
     .. group-tab:: Foxy
     
     	.. code-block:: console
     	
-		sudo apt install ros-foxy-gazebo-ros-pkgs
-		sudo apt install ros-foxy-cartographer ros-foxy-cartographer-ros
-		sudo apt install ros-foxy-navigation2 ros-foxy-nav2-bringup
+			sudo apt install ros-foxy-gazebo-ros-pkgs
+			sudo apt install ros-foxy-cartographer ros-foxy-cartographer-ros
+			sudo apt install ros-foxy-navigation2 ros-foxy-nav2-bringup
 	
     .. group-tab:: Galactic
     
@@ -109,7 +109,7 @@ Installation of Gazebo
     	
     		sudo apt install ros-galactic-gazebo-ros-pkgs
     		sudo apt install ros-galactic-cartographer ros-galactic-cartographer-ros
-		sudo apt install ros-galactic-navigation2 ros-galactic-nav2-bringup
+			sudo apt install ros-galactic-navigation2 ros-galactic-nav2-bringup
 
 
 Installation of Robot Packages
@@ -122,48 +122,89 @@ TurtleBot 3
 
     .. group-tab:: Dashing
     
-	.. code-block:: console
+		.. code-block:: console
 	
-		mkdir -p ~/turtlebot3_ws/src
-		cd ~/turtlebot3_ws/src/
-		git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-		git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
-		sudo apt install ros-dashing-dynamixel-sdk
-		git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-		cd ~/turtlebot3_ws && colcon build --symlink-install	
+			mkdir -p ~/turtlebot3_ws/src
+			cd ~/turtlebot3_ws/src/
+			git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+			git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+			sudo apt install ros-dashing-dynamixel-sdk
+			git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+			cd ~/turtlebot3_ws && colcon build --symlink-install	
 
 
     .. group-tab:: Foxy
     
     	.. code-block:: console
     	
-		mkdir -p ~/turtlebot3_ws/src
-		cd ~/turtlebot3_ws/src/
-		git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-		git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
-		sudo apt install ros-foxy-dynamixel-sdk
-		git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-		cd ~/turtlebot3_ws && colcon build --symlink-install
-	
+			mkdir -p ~/turtlebot3_ws/src
+			cd ~/turtlebot3_ws/src/
+			git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+			git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+			sudo apt install ros-foxy-dynamixel-sdk
+			git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+			cd ~/turtlebot3_ws && colcon build --symlink-install
+		
     .. group-tab:: Galactic
     
     	.. code-block:: console
     		
-    		mkdir -p ~/turtlebot3_ws/src
-		cd ~/turtlebot3_ws/src/
-		git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-		git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
-		sudo apt install ros-galactic-dynamixel-sdk
-		git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-		cd ~/turtlebot3_ws && colcon build --symlink-install
+	    	mkdir -p ~/turtlebot3_ws/src
+			cd ~/turtlebot3_ws/src/
+			git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+			git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
+			sudo apt install ros-galactic-dynamixel-sdk
+			git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+			cd ~/turtlebot3_ws && colcon build --symlink-install
 
 
 
 Thymio II
 ~~~~~~~~~
 
+.. tabs:: 
+
+    .. group-tab:: Dashing
+
+    	No Thymio II support 
+
+    .. group-tab:: Foxy
+    
+    	1. Please follow the official `installation guide  <http://jeguzzi.github.io/ros-aseba/installation.html#ros-aseba>`_ for ROS-Aseba (simulation and real robots) and ROS-Thymio (real robots only).
+    	2. Clone the Thymio description repository to your colcon workspace 
+			
+			.. code-block:: console
+
+				git clone https://github.com/ROS2swarm/thymio_description.git src/thymio_description 
+
+		3. Build your colcon workspace 
+
+			.. code-block:: console
+
+				colcon build --symlink-install 		
+	
+    .. group-tab:: Galactic
+
+    	follow instructions for foxy (untested!)
+    	
+
 Jackal
 ~~~~~~
+
+.. tabs:: 
+
+    .. group-tab:: Dashing
+
+    	No Jackal support 
+
+    .. group-tab:: Foxy
+    
+    	Please follow the official `installation guide <http://www.clearpathrobotics.com/assets/guides/foxy/jackal/JackalInstallDesktopSoftware.html#installing-jackal-desktop-software>`_.
+    	ToDo: LIDAR not included yet 
+	
+    .. group-tab:: Galactic
+
+    	No Jackal support 
 
 
 Environment Configuration 
@@ -173,28 +214,28 @@ Environment Configuration
 
     .. group-tab:: Dashing
     
-	.. code-block:: console
+		.. code-block:: console
 	
-		echo 'source /opt/ros/dashing/setup.bash' >> ~/.bashrc	
-		echo 'source /~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
-		echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
-		echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
+			echo 'source /opt/ros/dashing/setup.bash' >> ~/.bashrc	
+			echo 'source /~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+			echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:~/turtlebot3_ws/src/thymio_description' >> ~/.bashrc
+			echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
 				
     .. group-tab:: Foxy
     
     	.. code-block:: console
     	
-		echo 'source /opt/ros/foxy/setup.bash' >> ~/.bashrc
-		echo 'source /~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
-		echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
-		echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
+			echo 'source /opt/ros/foxy/setup.bash' >> ~/.bashrc
+			echo 'source /~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+			echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
+			echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
 		
     .. group-tab:: Galactic
     
     	.. code-block:: console
     		
-		echo 'source /opt/ros/galactic/setup.bash' >> ~/.bashrc
-		echo 'source /~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
-		echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
-		echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
+			echo 'source /opt/ros/galactic/setup.bash' >> ~/.bashrc
+			echo 'source /~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+			echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
+			echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
 

@@ -1,9 +1,3 @@
-.. this is a comment, it is not rendered
-   when adding new *.rst files, reference them here
-   in this index.rst for them to be rendered and added to the
-   table of contents
-
-
 ROS2swarm Documentation
 =======================
 
@@ -14,13 +8,18 @@ ROS2swarm Documentation
    installation.rst
    architecture.rst  
    patterns.rst
+   robots.rst 
    howto.rst 
    contact.rst
 
 ROS2swarm is a ROS 2 package providing a framework for and library of swarm behaviors.
 Its aim is to facilitate swarm robotic projects in research, education, and industry. 
 
-The ROS2swarm package can be found on `Github <https://github.com/ROS2swarm/ROS2swarm>`_.
+The ROS2swarm package can be found on `Github <https://github.com/ROS2swarm/ROS2swarm>`_ and is currently available for the ROS 2 versions:
+
+* `Dashing <https://github.com/ROS2swarm/ROS2swarm/tree/dashing-dev>`_, 
+* `Foxy <https://github.com/ROS2swarm/ROS2swarm/tree/foxy-dev>`_, and 
+* `Galatic <https://github.com/ROS2swarm/ROS2swarm/tree/galactic-dev>`_.
 
 This site contains the documentation for ROS2swarm. 
 If you use ROS2swarm in your work, please cite the 2022 ICRA paper `ROS2SWARM - A ROS 2 Package for Swarm Robot Behaviors <http://heikohamann.de/pub/kaiserICRA2022.pdf>`_.
@@ -40,6 +39,7 @@ T. K. Kaiser, M. J. Begemann, T. Plattenteich, L. Schilling, G. Schildbach and H
   		doi={10.1109/ICRA46639.2022.9812417}
   	}
 
+
 Getting started
 ---------------
 
@@ -50,6 +50,10 @@ Getting started
 * :doc:`Swarm Behaviors <patterns>`
 
   - Overview of implemented swarm behaviors 
+
+* :doc:`Support Robot Platforms <robots>`
+
+  - Overview of currently supported robot platforms 
 
 * :doc:`How-to Guides <howto>`
 
