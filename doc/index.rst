@@ -14,6 +14,9 @@ ROS2swarm Documentation
    installation.rst
    architecture.rst  
    patterns.rst
+   howto.rst 
+   ├── launch_sim.rst
+   ├── launch_robot.rst
    contact.rst
 
 ROS2swarm is a ROS 2 package providing a framework for and library of swarm behaviors.
