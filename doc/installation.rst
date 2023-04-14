@@ -164,12 +164,12 @@ Thymio II
 
 .. tabs:: 
 
-    .. group-tab:: Dashing
+	.. group-tab:: Dashing
 
-    	No Thymio II support 
+		No Thymio II support 
 
 	.. group-tab:: Foxy
-    
+
 		1. Please follow the official `installation guide  <http://jeguzzi.github.io/ros-aseba/installation.html#ros-aseba>`_ for ROS-Aseba (simulation and real robots) and ROS-Thymio (real robots only).
 		2. Clone the Thymio description repository to your colcon workspace 
 			
