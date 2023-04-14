@@ -186,7 +186,7 @@ Thymio II
 	.. group-tab:: Galactic
 
 		follow instructions for foxy (untested!)
-    	
+
 
 Jackal
 ~~~~~~
