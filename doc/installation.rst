@@ -168,10 +168,10 @@ Thymio II
 
     	No Thymio II support 
 
-    .. group-tab:: Foxy
+	.. group-tab:: Foxy
     
-    	1. Please follow the official `installation guide  <http://jeguzzi.github.io/ros-aseba/installation.html#ros-aseba>`_ for ROS-Aseba (simulation and real robots) and ROS-Thymio (real robots only).
-    	2. Clone the Thymio description repository to your colcon workspace 
+		1. Please follow the official `installation guide  <http://jeguzzi.github.io/ros-aseba/installation.html#ros-aseba>`_ for ROS-Aseba (simulation and real robots) and ROS-Thymio (real robots only).
+		2. Clone the Thymio description repository to your colcon workspace 
 			
 		.. code-block:: console
 
@@ -182,10 +182,10 @@ Thymio II
 		.. code-block:: console
 
 			colcon build --symlink-install 		
-	
-    .. group-tab:: Galactic
 
-    	follow instructions for foxy (untested!)
+	.. group-tab:: Galactic
+
+		follow instructions for foxy (untested!)
     	
 
 Jackal
@@ -193,24 +193,24 @@ Jackal
 
 .. tabs:: 
 
-    .. group-tab:: Dashing
+	.. group-tab:: Dashing
 
-    	No Jackal support 
+		No Jackal support 
 
-    .. group-tab:: Foxy
-    
-    	Please follow the official `installation guide <http://www.clearpathrobotics.com/assets/guides/foxy/jackal/JackalInstallDesktopSoftware.html#installing-jackal-desktop-software>`_.
+	.. group-tab:: Foxy
 
-    	Set the parameters for including a LiDAR:
+	 	Please follow the official `installation guide <http://www.clearpathrobotics.com/assets/guides/foxy/jackal/JackalInstallDesktopSoftware.html#installing-jackal-desktop-software>`_.
+
+		Set the parameters for including a LiDAR:
 
 		.. code-block:: console
 
-    		echo 'export JACKAL_LASER=1' >> ~/.bashrc
-    		echo 'export JACKAL_LASER_MOUNT=mid' >> ~/.bashrc
+			echo 'export JACKAL_LASER=1' >> ~/.bashrc
+			echo 'export JACKAL_LASER_MOUNT=mid' >> ~/.bashrc
 	
-    .. group-tab:: Galactic
+	.. group-tab:: Galactic
 
-    	No Jackal support 
+		No Jackal support 
 
 
 Environment Configuration 
