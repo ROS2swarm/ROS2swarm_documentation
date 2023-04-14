@@ -173,15 +173,15 @@ Thymio II
     	1. Please follow the official `installation guide  <http://jeguzzi.github.io/ros-aseba/installation.html#ros-aseba>`_ for ROS-Aseba (simulation and real robots) and ROS-Thymio (real robots only).
     	2. Clone the Thymio description repository to your colcon workspace 
 			
-			.. code-block:: console
+		.. code-block:: console
 
-				git clone https://github.com/ROS2swarm/thymio_description.git src/thymio_description 
+			git clone https://github.com/ROS2swarm/thymio_description.git src/thymio_description 
 
 		3. Build your colcon workspace 
 
-			.. code-block:: console
+		.. code-block:: console
 
-				colcon build --symlink-install 		
+			colcon build --symlink-install 		
 	
     .. group-tab:: Galactic
 
@@ -200,7 +200,13 @@ Jackal
     .. group-tab:: Foxy
     
     	Please follow the official `installation guide <http://www.clearpathrobotics.com/assets/guides/foxy/jackal/JackalInstallDesktopSoftware.html#installing-jackal-desktop-software>`_.
-    	ToDo: LIDAR not included yet 
+
+    	Set the parameters for including a LiDAR:
+
+		.. code-block:: console
+
+    		echo 'export JACKAL_LASER=1' >> ~/.bashrc
+    		echo 'export JACKAL_LASER_MOUNT=mid' >> ~/.bashrc
 	
     .. group-tab:: Galactic
 
