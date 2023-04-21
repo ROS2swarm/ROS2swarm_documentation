@@ -9,6 +9,7 @@ ROS2swarm Documentation
    architecture.rst  
    patterns.rst
    robots.rst 
+   sensors.rst 
    howto.rst 
    contact.rst
 
@@ -51,9 +52,13 @@ Getting started
 
   - Overview of implemented swarm behaviors 
 
-* :doc:`Support Robot Platforms <robots>`
+* :doc:`Supported Robot Platforms <robots>`
 
   - Overview of currently supported robot platforms 
+
+* :doc:`Sensor Layer <sensors>`
+
+  - Overview of currently supported sensor types  
 
 * :doc:`How-to Guides <howto>`
 

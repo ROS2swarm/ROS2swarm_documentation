@@ -27,6 +27,8 @@ For this purpose, the launch script ``start_simulation.sh`` offers several param
 +---------------+--------------------------------------------------+-------------------------------------------+
 | robot         | see :doc:`Supported Robot Platforms <../robots>` | launched robot type                       | 
 +---------------+--------------------------------------------------+-------------------------------------------+
+| sensor_type   | see :doc:`Sensor Layer <../sensors>`             | sensor type of robot                      |
++---------------+--------------------------------------------------+-------------------------------------------+
 | x_start       | float                                            | first position on x-axis                  | 
 +---------------+--------------------------------------------------+-------------------------------------------+
 | x_dist        | float                                            | increment along x-axis for robot position | 
