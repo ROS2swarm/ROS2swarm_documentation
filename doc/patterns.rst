@@ -7,7 +7,6 @@ Every pattern can either be a basic pattern (i.e., basic building blocks) or a c
 The different patterns may have requirements regarding the sensory setup to be executable. 
 We summarize the existing patterns as well as their requirements in the following table. 
 
-
 +-------------------------------+----------+----------+------------+-------+---------------------+
 | Pattern                       | Domain   | Type     | Simulation | Robot | Sensor Requirements |
 +===============================+==========+==========+============+=======+=====================+
@@ -15,7 +14,7 @@ We summarize the existing patterns as well as their requirements in the followin
 +-------------------------------+----------+----------+------------+-------+---------------------+
 | attraction                    | Movement | Basic    | x          | x     | LiDAR or IR         |
 +-------------------------------+----------+----------+------------+-------+---------------------+
-| attraction 2                  | Movement | Basic    | x          | x     | LiDAR or IR         |
+| attraction2                   | Movement | Basic    | x          | x     | LiDAR or IR         |
 +-------------------------------+----------+----------+------------+-------+---------------------+
 | dispersion                    | Movement | Basic    | x          | x     | LiDAR or IR         |
 +-------------------------------+----------+----------+------------+-------+---------------------+
@@ -33,3 +32,5 @@ We summarize the existing patterns as well as their requirements in the followin
 +-------------------------------+----------+----------+------------+-------+---------------------+
 | majority rule                 | Voting   | Basic    | x          | x     |                     |
 +-------------------------------+----------+----------+------------+-------+---------------------+
+
+To set a specific pattern in the launch script, specify ``pattern := *pattern_name*_pattern`` as a parameter, e.g. to launch the random walk pattern, you have to set ``pattern`` to ``random_walk_pattern``. 
