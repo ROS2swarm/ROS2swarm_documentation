@@ -4,8 +4,9 @@ Installation
 This guide is a detailed step by step instruction to install the ROS2swarm package on top of *Ubuntu* for the use with 
 
 - the TurtleBot 3
-- the Jackal UGV or
+- the Jackal UGV 
 - the Thymio II
+- AgileX Limo 
 
 Prerequisistes
 --------------
@@ -30,7 +31,7 @@ Installation of ROS 2
 
 ROS2swarm currently supports ROS 2 Dashing, Foxy, and Galactic. 
 
-Please install your desired ROS 2 version (recommended: Galactic) following the official ROS 2 installation guide: 
+Please install your desired ROS 2 version (recommended: Foxy) following the official ROS 2 installation guide: 
 
 
 .. tabs:: 
@@ -213,6 +214,47 @@ Jackal
 		No Jackal support 
 
 
+Limo
+~~~~~~
+
+.. tabs:: 
+
+	.. group-tab:: Dashing
+
+		ToDo 
+
+	.. group-tab:: Foxy
+
+	 	ToDo
+	
+	.. group-tab:: Galactic
+
+		ToDo
+
+
+
+Installation of ROS2swarm
+-------------------------
+
+Please download the ROS2swarm version for your desired ROS 2 version from the `ROS2swarm Github page <https://github.com/ROS2swarm/ROS2swarm>`_.
+
+
+Installation of Driving Swarm Infrastructure
+--------------------------------------------
+
+Install required dependencies: 
+
+.. code-block:: console
+
+	pip3 install xacro pickle5 transforms3d shapely graph-tool deprecation dubins bezier
+	sudo apt install python3-rosgraph ros-foxy-tf-transformations python3-pykdl python3-termcolor python3-skimage python3-scipy
+	pip3 install git+https://github.com/ghliu/pyReedsShepp.git
+
+Download driving swarm infrastructure package from `Github <https://github.com/ovgu-FINken/driving_swarm_infrastructure/tree/foxy>`_ (tested only for foxy so far). 
+
+Now, you can build the driving swarm packages by navigating into the driving_swarm_infrastructure folder and running `colcon build`. 
+
+
 Environment Configuration 
 -------------------------
 
@@ -223,7 +265,7 @@ Environment Configuration
 		.. code-block:: console
 	
 			echo 'source /opt/ros/dashing/setup.bash' >> ~/.bashrc	
-			echo 'source /~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+			echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 			echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:~/turtlebot3_ws/src/thymio_description' >> ~/.bashrc
 			echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
 				
@@ -232,7 +274,8 @@ Environment Configuration
     	.. code-block:: console
     	
 			echo 'source /opt/ros/foxy/setup.bash' >> ~/.bashrc
-			echo 'source /~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+			echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+			echo 'source ~/driving_swarm_infrastructure/install/setup.bash' >> ~/.bashrc
 			echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
 			echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
 		
@@ -241,7 +284,8 @@ Environment Configuration
     	.. code-block:: console
     		
 			echo 'source /opt/ros/galactic/setup.bash' >> ~/.bashrc
-			echo 'source /~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+			echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+			echo 'source ~/driving_swarm_infrastructure/install/setup.bash' >> ~/.bashrc
 			echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
 			echo 'export TURTLEBOT3_MODEL=waffle_pi' >> ~/.bashrc
 
