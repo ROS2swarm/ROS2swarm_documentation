@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; ROS2swarm 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/tabs.js?v=3030b3cb"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Package Architecture" href="architecture.html" />
+    <link rel="prev" title="ROS2swarm Documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ROS2swarm
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisistes">Prerequisistes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-of-ros-2">Installation of ROS 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-of-additional-dependencies">Installation of Additional Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-of-gazebo">Installation of Gazebo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-of-robot-packages">Installation of Robot Packages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#turtlebot-3">TurtleBot 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#thymio-ii">Thymio II</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jackal">Jackal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#limo">Limo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-of-ros2swarm">Installation of ROS2swarm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-of-driving-swarm-infrastructure">Installation of Driving Swarm Infrastructure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#environment-configuration">Environment Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Package Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="patterns.html">Swarm Behaviors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robots.html">Supported Robot Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sensors.html">Sensor Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How-to Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ROS2swarm</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h1>
+<p>This guide is a detailed step by step instruction to install the ROS2swarm package on top of <em>Ubuntu</em> for the use with</p>
+<ul class="simple">
+<li><p>the TurtleBot 3</p></li>
+<li><p>the Jackal UGV</p></li>
+<li><p>the Thymio II</p></li>
+<li><p>AgileX Limo</p></li>
+</ul>
+<section id="prerequisistes">
+<h2>Prerequisistes<a class="headerlink" href="#prerequisistes" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-RGFzaGluZw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-RGFzaGluZw==" name="RGFzaGluZw==" role="tab" tabindex="0">Dashing</button><button aria-controls="panel-0-Rm94eQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Rm94eQ==" name="Rm94eQ==" role="tab" tabindex="-1">Foxy</button><button aria-controls="panel-0-R2FsYWN0aWM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tab" tabindex="-1">Galactic</button></div><div aria-labelledby="tab-0-RGFzaGluZw==" class="sphinx-tabs-panel group-tab" id="panel-0-RGFzaGluZw==" name="RGFzaGluZw==" role="tabpanel" tabindex="0"><p>Ubuntu 18.04</p>
+</div><div aria-labelledby="tab-0-Rm94eQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Rm94eQ==" name="Rm94eQ==" role="tabpanel" tabindex="0"><p>Ubuntu 20.04</p>
+</div><div aria-labelledby="tab-0-R2FsYWN0aWM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tabpanel" tabindex="0"><p>Ubuntu 20.04</p>
+</div></div>
+</section>
+<section id="installation-of-ros-2">
+<h2>Installation of ROS 2<a class="headerlink" href="#installation-of-ros-2" title="Link to this heading"></a></h2>
+<p>ROS2swarm currently supports ROS 2 Dashing, Foxy, and Galactic.</p>
+<p>Please install your desired ROS 2 version (recommended: Foxy) following the official ROS 2 installation guide:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-RGFzaGluZw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-RGFzaGluZw==" name="RGFzaGluZw==" role="tab" tabindex="0">Dashing</button><button aria-controls="panel-1-Rm94eQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-Rm94eQ==" name="Rm94eQ==" role="tab" tabindex="-1">Foxy</button><button aria-controls="panel-1-R2FsYWN0aWM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tab" tabindex="-1">Galactic</button></div><div aria-labelledby="tab-1-RGFzaGluZw==" class="sphinx-tabs-panel group-tab" id="panel-1-RGFzaGluZw==" name="RGFzaGluZw==" role="tabpanel" tabindex="0"><p><a class="reference external" href="https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html">Installing ROS 2 Dashing Diademata</a></p>
+</div><div aria-labelledby="tab-1-Rm94eQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-Rm94eQ==" name="Rm94eQ==" role="tabpanel" tabindex="0"><p><a class="reference external" href="https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html">Installing ROS 2 Foxy Fitzroy</a></p>
+</div><div aria-labelledby="tab-1-R2FsYWN0aWM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tabpanel" tabindex="0"><p><a class="reference external" href="https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html">Installing ROS 2 Galactic Geochelone</a></p>
+</div></div>
+</section>
+<section id="installation-of-additional-dependencies">
+<h2>Installation of Additional Dependencies<a class="headerlink" href="#installation-of-additional-dependencies" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-RGFzaGluZw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-RGFzaGluZw==" name="RGFzaGluZw==" role="tab" tabindex="0">Dashing</button><button aria-controls="panel-2-Rm94eQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-Rm94eQ==" name="Rm94eQ==" role="tab" tabindex="-1">Foxy</button><button aria-controls="panel-2-R2FsYWN0aWM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tab" tabindex="-1">Galactic</button></div><div aria-labelledby="tab-2-RGFzaGluZw==" class="sphinx-tabs-panel group-tab" id="panel-2-RGFzaGluZw==" name="RGFzaGluZw==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt install -y python3-pip</span>
+<span class="go">pip3 install -U argcomplete</span>
+<span class="go">sudo apt install python3-colcon-common-extensions python3-vcstool</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-Rm94eQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-Rm94eQ==" name="Rm94eQ==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt install -y python3-pip</span>
+<span class="go">pip3 install -U argcomplete</span>
+<span class="go">sudo apt install python3-colcon-common-extensions ros-foxy-xacro</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-R2FsYWN0aWM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt install -y python3-pip</span>
+<span class="go">pip3 install -U argcomplete</span>
+<span class="go">sudo apt install python3-colcon-common-extensions</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="installation-of-gazebo">
+<h2>Installation of Gazebo<a class="headerlink" href="#installation-of-gazebo" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-RGFzaGluZw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-3-RGFzaGluZw==" name="RGFzaGluZw==" role="tab" tabindex="0">Dashing</button><button aria-controls="panel-3-Rm94eQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-Rm94eQ==" name="Rm94eQ==" role="tab" tabindex="-1">Foxy</button><button aria-controls="panel-3-R2FsYWN0aWM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tab" tabindex="-1">Galactic</button></div><div aria-labelledby="tab-3-RGFzaGluZw==" class="sphinx-tabs-panel group-tab" id="panel-3-RGFzaGluZw==" name="RGFzaGluZw==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">curl -sSL http://get.gazebosim.org | sh</span>
+<span class="go">sudo apt remove gazebo11 libgazebo11-dev</span>
+<span class="go">sudo apt install gazebo9 libgazebo9-dev</span>
+<span class="go">sudo apt install ros-dashing-gazebo-ros-pkgs</span>
+<span class="go">sudo apt install ros-dashing-cartographer ros-dashing-cartographer-ros</span>
+<span class="go">sudo apt install ros-dashing-navigation2 ros-dashing-nav2-bringup</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-Rm94eQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-3-Rm94eQ==" name="Rm94eQ==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt install ros-foxy-gazebo-ros-pkgs</span>
+<span class="go">sudo apt install ros-foxy-cartographer ros-foxy-cartographer-ros</span>
+<span class="go">sudo apt install ros-foxy-navigation2 ros-foxy-nav2-bringup</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-R2FsYWN0aWM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-3-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt install ros-galactic-gazebo-ros-pkgs</span>
+<span class="go">sudo apt install ros-galactic-cartographer ros-galactic-cartographer-ros</span>
+<span class="go">        sudo apt install ros-galactic-navigation2 ros-galactic-nav2-bringup</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="installation-of-robot-packages">
+<h2>Installation of Robot Packages<a class="headerlink" href="#installation-of-robot-packages" title="Link to this heading"></a></h2>
+<section id="turtlebot-3">
+<h3>TurtleBot 3<a class="headerlink" href="#turtlebot-3" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-RGFzaGluZw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-4-RGFzaGluZw==" name="RGFzaGluZw==" role="tab" tabindex="0">Dashing</button><button aria-controls="panel-4-Rm94eQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-Rm94eQ==" name="Rm94eQ==" role="tab" tabindex="-1">Foxy</button><button aria-controls="panel-4-R2FsYWN0aWM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tab" tabindex="-1">Galactic</button></div><div aria-labelledby="tab-4-RGFzaGluZw==" class="sphinx-tabs-panel group-tab" id="panel-4-RGFzaGluZw==" name="RGFzaGluZw==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">mkdir -p ~/turtlebot3_ws/src</span>
+<span class="go">cd ~/turtlebot3_ws/src/</span>
+<span class="go">git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git</span>
+<span class="go">git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3.git</span>
+<span class="go">sudo apt install ros-dashing-dynamixel-sdk</span>
+<span class="go">git clone -b dashing-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git</span>
+<span class="go">cd ~/turtlebot3_ws &amp;&amp; colcon build --symlink-install</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-Rm94eQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-4-Rm94eQ==" name="Rm94eQ==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">mkdir -p ~/turtlebot3_ws/src</span>
+<span class="go">cd ~/turtlebot3_ws/src/</span>
+<span class="go">git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git</span>
+<span class="go">git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3.git</span>
+<span class="go">sudo apt install ros-foxy-dynamixel-sdk</span>
+<span class="go">git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git</span>
+<span class="go">cd ~/turtlebot3_ws &amp;&amp; colcon build --symlink-install</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-R2FsYWN0aWM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-4-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">mkdir -p ~/turtlebot3_ws/src</span>
+<span class="go">        cd ~/turtlebot3_ws/src/</span>
+<span class="go">        git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git</span>
+<span class="go">        git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git</span>
+<span class="go">        sudo apt install ros-galactic-dynamixel-sdk</span>
+<span class="go">        git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git</span>
+<span class="go">        cd ~/turtlebot3_ws &amp;&amp; colcon build --symlink-install</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="thymio-ii">
+<h3>Thymio II<a class="headerlink" href="#thymio-ii" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-5-RGFzaGluZw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-5-RGFzaGluZw==" name="RGFzaGluZw==" role="tab" tabindex="0">Dashing</button><button aria-controls="panel-5-Rm94eQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-5-Rm94eQ==" name="Rm94eQ==" role="tab" tabindex="-1">Foxy</button><button aria-controls="panel-5-R2FsYWN0aWM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-5-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tab" tabindex="-1">Galactic</button></div><div aria-labelledby="tab-5-RGFzaGluZw==" class="sphinx-tabs-panel group-tab" id="panel-5-RGFzaGluZw==" name="RGFzaGluZw==" role="tabpanel" tabindex="0"><p>No Thymio II support</p>
+</div><div aria-labelledby="tab-5-Rm94eQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-5-Rm94eQ==" name="Rm94eQ==" role="tabpanel" tabindex="0"><ol class="arabic simple">
+<li><p>Please follow the official <a class="reference external" href="http://jeguzzi.github.io/ros-aseba/installation.html#ros-aseba">installation guide</a> for ROS-Aseba (simulation and real robots) and ROS-Thymio (real robots only).</p></li>
+<li><p>Clone the Thymio description repository to your colcon workspace</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone https://github.com/ROS2swarm/thymio_description.git src/thymio_description</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Build your colcon workspace</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">colcon build --symlink-install</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-5-R2FsYWN0aWM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-5-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tabpanel" tabindex="0"><p>follow instructions for foxy (untested!)</p>
+</div></div>
+</section>
+<section id="jackal">
+<h3>Jackal<a class="headerlink" href="#jackal" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-6-RGFzaGluZw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-6-RGFzaGluZw==" name="RGFzaGluZw==" role="tab" tabindex="0">Dashing</button><button aria-controls="panel-6-Rm94eQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-6-Rm94eQ==" name="Rm94eQ==" role="tab" tabindex="-1">Foxy</button><button aria-controls="panel-6-R2FsYWN0aWM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-6-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tab" tabindex="-1">Galactic</button></div><div aria-labelledby="tab-6-RGFzaGluZw==" class="sphinx-tabs-panel group-tab" id="panel-6-RGFzaGluZw==" name="RGFzaGluZw==" role="tabpanel" tabindex="0"><p>No Jackal support</p>
+</div><div aria-labelledby="tab-6-Rm94eQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-6-Rm94eQ==" name="Rm94eQ==" role="tabpanel" tabindex="0"><p>Please follow the official <a class="reference external" href="http://www.clearpathrobotics.com/assets/guides/foxy/jackal/JackalInstallDesktopSoftware.html#installing-jackal-desktop-software">installation guide</a>.</p>
+<p>Set the parameters for including a LiDAR:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">echo &#39;export JACKAL_LASER=1&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;export JACKAL_LASER_MOUNT=mid&#39; &gt;&gt; ~/.bashrc</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-6-R2FsYWN0aWM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-6-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tabpanel" tabindex="0"><p>No Jackal support</p>
+</div></div>
+</section>
+<section id="limo">
+<h3>Limo<a class="headerlink" href="#limo" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-7-RGFzaGluZw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-7-RGFzaGluZw==" name="RGFzaGluZw==" role="tab" tabindex="0">Dashing</button><button aria-controls="panel-7-Rm94eQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-7-Rm94eQ==" name="Rm94eQ==" role="tab" tabindex="-1">Foxy</button><button aria-controls="panel-7-R2FsYWN0aWM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-7-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tab" tabindex="-1">Galactic</button></div><div aria-labelledby="tab-7-RGFzaGluZw==" class="sphinx-tabs-panel group-tab" id="panel-7-RGFzaGluZw==" name="RGFzaGluZw==" role="tabpanel" tabindex="0"><p>ToDo</p>
+</div><div aria-labelledby="tab-7-Rm94eQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-7-Rm94eQ==" name="Rm94eQ==" role="tabpanel" tabindex="0"><p>ToDo</p>
+</div><div aria-labelledby="tab-7-R2FsYWN0aWM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-7-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tabpanel" tabindex="0"><p>ToDo</p>
+</div></div>
+</section>
+</section>
+<section id="installation-of-ros2swarm">
+<h2>Installation of ROS2swarm<a class="headerlink" href="#installation-of-ros2swarm" title="Link to this heading"></a></h2>
+<p>Please download the ROS2swarm version for your desired ROS 2 version from the <a class="reference external" href="https://github.com/ROS2swarm/ROS2swarm">ROS2swarm Github page</a>.</p>
+</section>
+<section id="installation-of-driving-swarm-infrastructure">
+<h2>Installation of Driving Swarm Infrastructure<a class="headerlink" href="#installation-of-driving-swarm-infrastructure" title="Link to this heading"></a></h2>
+<p>Install required dependencies:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip3 install xacro pickle5 transforms3d shapely graph-tool deprecation dubins bezier</span>
+<span class="go">sudo apt install python3-rosgraph ros-foxy-tf-transformations python3-pykdl python3-termcolor python3-skimage python3-scipy</span>
+<span class="go">pip3 install git+https://github.com/ghliu/pyReedsShepp.git</span>
+</pre></div>
+</div>
+<p>Download driving swarm infrastructure package from <a class="reference external" href="https://github.com/ovgu-FINken/driving_swarm_infrastructure/tree/foxy">Github</a> (tested only for foxy so far).</p>
+<p>Now, you can build the driving swarm packages by navigating into the driving_swarm_infrastructure folder and running <cite>colcon build</cite>.</p>
+</section>
+<section id="environment-configuration">
+<h2>Environment Configuration<a class="headerlink" href="#environment-configuration" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-8-RGFzaGluZw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-8-RGFzaGluZw==" name="RGFzaGluZw==" role="tab" tabindex="0">Dashing</button><button aria-controls="panel-8-Rm94eQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-8-Rm94eQ==" name="Rm94eQ==" role="tab" tabindex="-1">Foxy</button><button aria-controls="panel-8-R2FsYWN0aWM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-8-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tab" tabindex="-1">Galactic</button></div><div aria-labelledby="tab-8-RGFzaGluZw==" class="sphinx-tabs-panel group-tab" id="panel-8-RGFzaGluZw==" name="RGFzaGluZw==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">echo &#39;source /opt/ros/dashing/setup.bash&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;source ~/turtlebot3_ws/install/setup.bash&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models:~/turtlebot3_ws/src/thymio_description&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;export TURTLEBOT3_MODEL=waffle_pi&#39; &gt;&gt; ~/.bashrc</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-8-Rm94eQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-8-Rm94eQ==" name="Rm94eQ==" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">echo &#39;source /opt/ros/foxy/setup.bash&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;source ~/turtlebot3_ws/install/setup.bash&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;source ~/driving_swarm_infrastructure/install/setup.bash&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;export TURTLEBOT3_MODEL=waffle_pi&#39; &gt;&gt; ~/.bashrc</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-8-R2FsYWN0aWM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-8-R2FsYWN0aWM=" name="R2FsYWN0aWM=" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">echo &#39;source /opt/ros/galactic/setup.bash&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;source ~/turtlebot3_ws/install/setup.bash&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;source ~/driving_swarm_infrastructure/install/setup.bash&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models&#39; &gt;&gt; ~/.bashrc</span>
+<span class="go">echo &#39;export TURTLEBOT3_MODEL=waffle_pi&#39; &gt;&gt; ~/.bashrc</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="ROS2swarm Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="architecture.html" class="btn btn-neutral float-right" title="Package Architecture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Tanja Katharina Kaiser.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

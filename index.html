@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROS2swarm Documentation &mdash; ROS2swarm 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            ROS2swarm
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Package Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="patterns.html">Swarm Behaviors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="robots.html">Supported Robot Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sensors.html">Sensor Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">How-to Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">ROS2swarm</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ROS2swarm Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ros2swarm-documentation">
+<h1>ROS2swarm Documentation<a class="headerlink" href="#ros2swarm-documentation" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>ROS2swarm is a ROS 2 package providing a framework for and library of swarm behaviors.
+Its aim is to facilitate swarm robotic projects in research, education, and industry.</p>
+<p>The ROS2swarm package can be found on <a class="reference external" href="https://github.com/ROS2swarm/ROS2swarm">Github</a> and is currently available for the ROS 2 versions:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ROS2swarm/ROS2swarm/tree/dashing-dev">Dashing</a>,</p></li>
+<li><p><a class="reference external" href="https://github.com/ROS2swarm/ROS2swarm/tree/foxy-dev">Foxy</a>, and</p></li>
+<li><p><a class="reference external" href="https://github.com/ROS2swarm/ROS2swarm/tree/galactic-dev">Galatic</a>.</p></li>
+</ul>
+<p>This site contains the documentation for ROS2swarm.
+If you use ROS2swarm in your work, please cite the 2022 ICRA paper <a class="reference external" href="http://heikohamann.de/pub/kaiserICRA2022.pdf">ROS2SWARM - A ROS 2 Package for Swarm Robot Behaviors</a>.</p>
+<ol class="upperalpha simple" start="20">
+<li><ol class="upperalpha simple" start="11">
+<li><p>Kaiser, M. J. Begemann, T. Plattenteich, L. Schilling, G. Schildbach and H. Hamann, “ROS2SWARM - A ROS 2 Package for Swarm Robot Behaviors,” 2022 International Conference on Robotics and Automation (ICRA), Philadelphia, PA, USA, 2022, pp. 6875-6881, doi: 10.1109/ICRA46639.2022.9812417.</p></li>
+</ol>
+</li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@INPROCEEDINGS</span><span class="p">{</span><span class="mi">9812417</span><span class="p">,</span>
+        <span class="n">author</span><span class="o">=</span><span class="p">{</span><span class="n">Kaiser</span><span class="p">,</span> <span class="n">Tanja</span> <span class="n">Katharina</span> <span class="ow">and</span> <span class="n">Begemann</span><span class="p">,</span> <span class="n">Marian</span> <span class="n">Johannes</span> <span class="ow">and</span> <span class="n">Plattenteich</span><span class="p">,</span> <span class="n">Tavia</span> <span class="ow">and</span> <span class="n">Schilling</span><span class="p">,</span> <span class="n">Lars</span> <span class="ow">and</span> <span class="n">Schildbach</span><span class="p">,</span> <span class="n">Georg</span> <span class="ow">and</span> <span class="n">Hamann</span><span class="p">,</span> <span class="n">Heiko</span><span class="p">},</span>
+        <span class="n">booktitle</span><span class="o">=</span><span class="p">{</span><span class="mi">2022</span> <span class="n">International</span> <span class="n">Conference</span> <span class="n">on</span> <span class="n">Robotics</span> <span class="ow">and</span> <span class="n">Automation</span> <span class="p">(</span><span class="n">ICRA</span><span class="p">)},</span>
+        <span class="n">title</span><span class="o">=</span><span class="p">{</span><span class="n">ROS2SWARM</span> <span class="o">-</span> <span class="n">A</span> <span class="n">ROS</span> <span class="mi">2</span> <span class="n">Package</span> <span class="k">for</span> <span class="n">Swarm</span> <span class="n">Robot</span> <span class="n">Behaviors</span><span class="p">},</span>
+        <span class="n">year</span><span class="o">=</span><span class="p">{</span><span class="mi">2022</span><span class="p">},</span>
+        <span class="n">volume</span><span class="o">=</span><span class="p">{},</span>
+        <span class="n">number</span><span class="o">=</span><span class="p">{},</span>
+        <span class="n">pages</span><span class="o">=</span><span class="p">{</span><span class="mi">6875</span><span class="o">-</span><span class="mi">6881</span><span class="p">},</span>
+        <span class="n">doi</span><span class="o">=</span><span class="p">{</span><span class="mf">10.1109</span><span class="o">/</span><span class="n">ICRA46639</span><span class="mf">.2022.9812417</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<section id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="installation.html"><span class="doc">Installation</span></a></p>
+<ul>
+<li><p>Instructions to set up ROS2swarm</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="patterns.html"><span class="doc">Swarm Behaviors</span></a></p>
+<ul>
+<li><p>Overview of implemented swarm behaviors</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="robots.html"><span class="doc">Supported Robot Platforms</span></a></p>
+<ul>
+<li><p>Overview of currently supported robot platforms</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="sensors.html"><span class="doc">Sensor Layer</span></a></p>
+<ul>
+<li><p>Overview of currently supported sensor types</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="howto.html"><span class="doc">How-to Guides</span></a></p>
+<ul>
+<li><p>Guides for using ROS2swarm</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="contact.html"><span class="doc">Contact</span></a></p>
+<ul>
+<li><p>Contact details for questions or contributions</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Tanja Katharina Kaiser.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
